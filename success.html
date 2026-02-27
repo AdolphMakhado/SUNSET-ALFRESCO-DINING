@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ticket Confirmed</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="checkout">
+<h2>Booking Confirmed</h2>
+<p>Your Ticket Number:</p>
+<h3 id="ticket-number"></h3>
+<div id="qrcode"></div>
+</div>
+
+<script>
+const ticketNumber = "SAD-" + Math.floor(Math.random()*1000000);
+document.getElementById("ticket-number").innerText = ticketNumber;
+
+new QRCode(document.getElementById("qrcode"), {
+    text: ticketNumber,
+    width: 200,
+    height: 200
+});
+</script>
+</body>
+</html>

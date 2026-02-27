@@ -1,0 +1,42 @@
+
+body {
+margin:0;
+font-family:Arial;
+background:linear-gradient(to bottom,#FFD6A5,#FF8C42,#FF6B6B);
+text-align:center;
+}
+
+.poster {
+width:90%;
+max-width:500px;
+margin:20px auto;
+display:block;
+}
+
+.ticket-card, .checkout {
+background:white;
+padding:30px;
+margin:20px auto;
+max-width:400px;
+}
+
+.btn-primary {
+background:#FF6B6B;
+color:white;
+padding:12px 24px;
+border:none;
+cursor:pointer;
+margin-top:20px;
+}
+
+.hidden {
+display:none;
+}
+
+input {
+display:block;
+margin:10px auto;
+padding:10px;
+width:80%;
+max-width:300px;
+}

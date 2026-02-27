@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNSET ALFRESCO DINING</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+<img src="poster.jpg" class="poster">
+<h1>SUNSET ALFRESCO DINING</h1>
+<p>12 April 2026</p>
+<p><strong>Limited Tickets</strong></p>
+<p>Secret Location (Shared with ticket holders only)</p>
+</section>
+
+<section class="tickets">
+<h2>Reserve Your Seat</h2>
+
+<div class="ticket-card">
+<h3>Individual Experience</h3>
+<p>R450</p>
+<button onclick="selectTicket('Individual Experience',450)">Select</button>
+</div>
+
+<div class="ticket-card">
+<h3>Couples Experience</h3>
+<p>R750</p>
+<button onclick="selectTicket('Couples Experience',750)">Select</button>
+</div>
+
+<div id="checkout" class="checkout hidden">
+<p id="selected-ticket"></p>
+
+<label>Quantity</label>
+<input type="number" id="quantity" value="1" min="1" onchange="calculateTotal()">
+
+<h3 id="total"></h3>
+
+<input type="text" id="name" placeholder="Full Name">
+<input type="email" id="email" placeholder="Email Address">
+<input type="tel" id="phone" placeholder="Phone Number">
+
+<button onclick="proceedToPayment()" class="btn-primary">
+Proceed to Payment
+</button>
+</div>
+
+</section>
+
+<form id="payfast-form" action="https://sandbox.payfast.co.za/eng/process" method="post" class="hidden">
+<input type="hidden" name="merchant_id" value="10000100">
+<input type="hidden" name="merchant_key" value="46f0cd694581a">
+<input type="hidden" name="return_url" value="success.html">
+<input type="hidden" name="cancel_url" value="cancel.html">
+<input type="hidden" name="m_payment_id" id="pf_payment_id">
+<input type="hidden" name="amount" id="pf_amount">
+<input type="hidden" name="item_name" id="pf_item">
+<input type="hidden" name="name_first" id="pf_name">
+<input type="hidden" name="email_address" id="pf_email">
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
