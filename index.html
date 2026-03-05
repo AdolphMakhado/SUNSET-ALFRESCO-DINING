@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunset Alfresco Dining</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="hero-text">
+
+<h1>Experience Unforgettable Moments</h1>
+
+<p>
+Luxury outdoor dining where golden hour meets curated flavour.
+</p>
+
+<a href="#tickets" class="btn">Get Tickets</a>
+
+</div>
+
+<div class="hero-image">
+<img src="poster.jpg" alt="Sunset Alfresco Dining Poster">
+</div>
+
+</header>
+
+
+<section id="tickets" class="tickets">
+
+<h2>Reserve Your Seat</h2>
+
+<div class="ticket-grid">
+
+<div class="ticket-card">
+
+<h3>Single Ticket</h3>
+
+<p class="price">R450</p>
+
+<p>1 Guest</p>
+
+<p>Starter • Main • Dessert</p>
+
+<button onclick="buyTicket('single')">Buy Ticket</button>
+
+</div>
+
+
+<div class="ticket-card">
+
+<h3>Couples Ticket</h3>
+
+<p class="price">R750</p>
+
+<p>2 Guests</p>
+
+<p>Romantic Experience</p>
+
+<button onclick="buyTicket('couple')">Buy Ticket</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<form id="payfast-form"
+action="https://sandbox.payfast.co.za/eng/process"
+method="post"
+class="hidden">
+
+<input type="hidden" name="merchant_id" value="10000100">
+<input type="hidden" name="merchant_key" value="46f0cd694581a">
+
+<input type="hidden" name="return_url" value="https://adolphmakhado.github.io/SUNSET-ALFRESCO-DINING/success.html">
+<input type="hidden" name="cancel_url" value="https://adolphmakhado.github.io/SUNSET-ALFRESCO-DINING/cancel.html">
+
+<input type="hidden"
+name="notify_url"
+value="https://sunset-backend-e16v.onrender.com/payfast/notify">
+
+<input type="hidden" name="amount" id="amount">
+<input type="hidden" name="item_name" id="item_name">
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
