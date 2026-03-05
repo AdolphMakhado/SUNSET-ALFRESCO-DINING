@@ -1,0 +1,103 @@
+body{
+margin:0;
+font-family:Poppins, sans-serif;
+background:#4B0000;
+color:white;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+flex-wrap:wrap;
+}
+
+.hero-text h1{
+font-family:'Playfair Display', serif;
+font-size:48px;
+}
+
+.btn{
+background:#D4AF37;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+color:black;
+display:inline-block;
+margin-top:20px;
+}
+
+.hero-image img{
+width:420px;
+border-radius:12px;
+max-width:100%;
+}
+
+.event-info{
+text-align:center;
+padding:80px 20px;
+}
+
+.tickets{
+text-align:center;
+padding:80px 20px;
+}
+
+.ticket-grid{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.ticket-card{
+background:#6a0000;
+padding:40px;
+border-radius:12px;
+width:250px;
+}
+
+.price{
+font-size:32px;
+color:#D4AF37;
+}
+
+button{
+background:#D4AF37;
+border:none;
+padding:12px 25px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.gallery{
+padding:80px 20px;
+text-align:center;
+}
+
+.gallery-grid{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.gallery-grid img{
+width:250px;
+border-radius:10px;
+}
+
+.limited{
+text-align:center;
+padding:60px;
+}
+
+.contact{
+text-align:center;
+padding:60px;
+}
+
+.hidden{
+display:none;
+}
